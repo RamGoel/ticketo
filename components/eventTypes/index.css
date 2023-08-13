@@ -1,0 +1,33 @@
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10px auto;
+}
+.card-body{
+    padding: 5px;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.card-title{
+    font-weight: 900;
+}
+
+.card-number{
+    background-color: rgb(36, 36, 36);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+}

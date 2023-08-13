@@ -1,0 +1,75 @@
+@import url('variables.css');
+
+.home_page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.search-head {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.search-head::after {
+    content: ' easily';
+    color: blueviolet;
+}
+
+.search-input {
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+    background-color: rgb(21, 21, 21);
+}
+
+.search-input:focus-visible {
+    outline: none;
+}
+
+.search-hint{
+    font-size: 10px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.search-hint>a{
+    color: blueviolet;
+}
+.suggestion-box{
+    background-color: rgb(5, 5, 5);
+    margin-top: 5px;
+    border-radius: 10px;
+    position: absolute;
+    width: 500px;
+}
+
+.suggestion-item{
+    padding: 10px;
+    font-size: 12px;
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggestion-item>svg{
+    width: 15px;
+    height: 15px;
+}
+
+.suggestion-item:hover{
+    opacity: 1;
+    transition: .5s;
+    background-color:blueviolet;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}

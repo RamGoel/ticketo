@@ -1,0 +1,42 @@
+@import url('@styles/variables.css');
+
+.header_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 9.9vh;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_profile_image {
+    border-radius: var(--full-radius);
+    margin: 0px 10px;
+    object-fit: cover;
+}
+
+
+.add-ticket-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 10px;
+    background-color: transparent;
+}
+
+.add-ticket-btn:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}

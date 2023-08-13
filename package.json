@@ -1,0 +1,23 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "iconsax-react": "^0.0.8",
+    "next": "13.4.12",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-redux": "^8.1.1"
+  }
+}
