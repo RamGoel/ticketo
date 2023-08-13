@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchTicketData } from '@lib/api'
 import { useEffect, useState } from 'react'
 import { ArrowRight } from 'iconsax-react'
+import { debounce } from '@lib/debounce'
 
 
 export default function Home() {
@@ -14,7 +15,12 @@ export default function Home() {
   const ticketData = useSelector(state => state.global.ticketData)
 
   useEffect(() => {
-    dispatch(fetchTicketData(`key=eventName&value=${query}`, () => { }))
+    const getResults=setTimeout(()=>{
+
+      dispatch(fetchTicketData(`key=eventName&value=${query}`, () => { }))
+    },500)
+
+    return ()=>clearTimeout(getResults)
   }, [query])
   return (
     <div className={`home_page ${uiMode}`}>
