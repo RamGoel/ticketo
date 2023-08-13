@@ -46,9 +46,9 @@ const TicketCards = ({
     return (
         <div className='tickets_box'>
             {
-                ticketData.map((ticket) => {
+                ticketData.length?ticketData.map((ticket) => {
                     return <TicketCard data={ticket} />
-                })
+                }):<p>No Results found for this search.</p>
             }
         </div>
     )
