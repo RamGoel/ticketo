@@ -1,2 +1,2 @@
-export const appName=`Ricket`
+export const appName=`ticketo`
 
