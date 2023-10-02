@@ -18,6 +18,7 @@ export const fetchTicketData = (query: string, disableLoader: Function): Functio
             dispatch(saveTicketData(response.data))
         }).catch((err) => {
             toast.error(err.message)
+            console.log(err)
         }).finally(() => {
             disableLoader(false)
         })
