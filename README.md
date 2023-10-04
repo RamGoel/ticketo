@@ -45,13 +45,7 @@ To run this project, you will need to add the following environment variables to
 
 ## Contributing
 
-Contributions are always welcome!
-
-Just `fork` the project, and create a Pull Request.
-
-Keep the commit messages clean and meaningful.
-
-e.g., fix: typos , feat: added search feature
+Contributions are always welcome, read [CONTRIBUTING.md](https://github.com/RamGoel/ticketo/blob/ricket/CONTRIBUTING.md) for guidelines.
 
 
 ## 🚀 About Me
