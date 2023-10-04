@@ -1,0 +1,18 @@
+.google-sign-in {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 10px;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.google-sign-in svg {
+  width: 12px;
+  height: 12px;
+  fill: #4285f4;
+  margin-right: 5px;
+}
