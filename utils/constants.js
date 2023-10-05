@@ -1,0 +1,1 @@
+export const PRIVATE_URL='https://sitern-api.vercel.app/v1/tickets'
