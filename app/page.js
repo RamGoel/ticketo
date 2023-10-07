@@ -24,6 +24,8 @@ export default function Home() {
     <div className={`home_page ${uiMode}`}>
       <div className='home-form'>
         <h1 className='search-head'>Find tickets</h1>
+        <div className='home-content'>
+
         <input className='search-input' onChange={(e) => {
           setQuery(e.target.value)
         }} placeholder='Search by event name' />
@@ -34,6 +36,7 @@ export default function Home() {
               return <Link className='suggestion-item' href={`/tickets?key=eventName&value=${obj.eventName}`}>{obj.eventName} <ArrowRight /></Link>
             }) : <p className='suggestion-item'>No Events Found</p>)
           }
+        </div>
         </div>
       </div>
     </div>

@@ -34,6 +34,11 @@
     font-size: 10px;
     background-color: transparent;
 }
+@media screen and (max-width:768px) {
+  .add-ticket-btn>span{
+    display:none;
+  }
+}
 
 .add-ticket-btn:hover{
     background-color: white;

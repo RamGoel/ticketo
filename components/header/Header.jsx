@@ -21,7 +21,7 @@ const Header = () => {
 
             <div className='header_right'>
 
-                <Link href={`/tickets/new`} className='add-ticket-btn'>+ Add New Ticket</Link>
+                <Link href={`/tickets/new`} className='add-ticket-btn'>+ <span>Add New Ticket</span></Link>
                 <Link href={`https://linkedin.com/in/RamGoel`}><Image
 
                     src={`/profile.png`}
@@ -37,4 +37,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;

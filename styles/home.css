@@ -3,7 +3,7 @@
 .home_page {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 70vh;
 }
 
@@ -13,6 +13,7 @@
     letter-spacing: 3px;
     font-weight: 700;
     margin: 10px 0px;
+    word-break: break-word;
 }
 
 .search-head::after {
@@ -30,6 +31,8 @@
     background-color: rgb(21, 21, 21);
 }
 
+
+
 .search-input:focus-visible {
     outline: none;
 }
@@ -38,6 +41,17 @@
     font-size: 10px;
     text-align: center;
     margin: 10px 0px;
+    width: 500px;
+    margin: 15px 0px;
+}
+
+@media screen and (max-width:768px) {
+    .search-input{
+        width: 90vw;
+    }
+    .search-hint{
+        width: 90vw;
+    }
 }
 
 .search-hint>a{
@@ -48,7 +62,7 @@
     margin-top: 5px;
     border-radius: 10px;
     position: absolute;
-    width: 500px;
+    top:70px;
 }
 
 .suggestion-item{
@@ -72,4 +86,12 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: relative;
 }
