@@ -4,6 +4,7 @@ import React from 'react'
 import './header.css'
 import { useDispatch, useSelector } from 'react-redux'
 import Link from 'next/link';
+import { FaGithub } from 'react-icons/fa';
 const Header = () => {
     const dispatch = useDispatch()
     const uiMode = useSelector(state => state.global.uiMode)
@@ -11,25 +12,12 @@ const Header = () => {
     return (
         <div className={`header_body ${uiMode}`} >
             <Link href="/" className='header_left'>
-                <Image
-                    src={`/lg (1).png`}
-                    width={50}
-                    height={50}
-                    alt='App Logo'
-                />
+                    <Link href={`https://github.com/RamGoel/ticketo`} className='github-icon'><FaGithub size={30} /> @RamGoel</Link>
             </Link>
 
             <div className='header_right'>
-
+                
                 <Link href={`/tickets/new`} className='add-ticket-btn'>+ <span>Add New Ticket</span></Link>
-                <Link href={`https://linkedin.com/in/RamGoel`}><Image
-
-                    src={`/profile.png`}
-                    width={40}
-                    height={40}
-                    alt='App Logo'
-                    className='header_profile_image'
-                /></Link>
             </div>
 
 
