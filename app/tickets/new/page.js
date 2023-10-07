@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import './index.css'
+import './newTicket.styles.css'
 import { Save2 } from 'iconsax-react'
 import { TicketCard } from '@components/ticketCards'
 import { useDispatch } from 'react-redux'
@@ -12,7 +12,7 @@ const NewTicket = () => {
     const dispatch = useDispatch()
 
     const handleCreateTicket = () => {
-        if (!data || data==={}) {
+        if (!data || !Object.keys(data).length){
             return;
         } else {
             setLoading(true)

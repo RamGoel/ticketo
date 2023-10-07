@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './eventType.styles.css'
 
 const EventTypeCard = ({ title, count }) => {
     return <div className='card-body'>

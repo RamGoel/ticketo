@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import Loader from '@components/Loader'
 import TicketCards from '@components/ticketCards'
 import { fetchTicketData } from '@lib/api'
-import { useRouter } from 'next/router'
 import { useSearchParams } from 'next/navigation'
 
 const TicketsList = () => {
