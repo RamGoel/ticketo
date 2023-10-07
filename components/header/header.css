@@ -1,38 +1,38 @@
-@import url('@styles/variables.css');
+@import url("@styles/variables.css");
 
 .header_body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    height: 9.9vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 9.9vh;
 }
 
 .header_left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header_right {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header_profile_image {
-    border-radius: var(--full-radius);
-    margin: 0px 10px;
-    object-fit: cover;
+  border-radius: var(--full-radius);
+  margin: 0px 10px;
+  object-fit: cover;
+  margin-top: 9px;
 }
 
-
-.add-ticket-btn{
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid white;
-    font-size: 10px;
-    background-color: transparent;
+.add-ticket-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 10px;
+  background-color: transparent;
 }
 @media screen and (max-width:768px) {
   .add-ticket-btn>span{
@@ -40,8 +40,67 @@
   }
 }
 
-.add-ticket-btn:hover{
-    background-color: white;
-    color: black;
-    transition: .5s;
+.add-ticket-btn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+/* Styles for the profile picture */
+.rounded-full {
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+/* Styles for the container div */
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styles for the dropdown transition */
+ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-width: 160px;
+  z-index: 50;
+  display: none;
+  border-radius: 4px;
+}
+
+.user-name {
+  color: #007bff;
+  border-bottom: 1px solid #ccc; /* Add a 1px solid line with a light gray color */
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+/* Styles for the Logout button */
+ul button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  margin-top: 8px;
+  transition: color 0.2s;
+}
+
+/* Change button color on hover */
+ul button:hover {
+  color: red;
+}
+
+/* Styles for the dropdown when it's open */
+div:hover ul {
+  display: block;
 }

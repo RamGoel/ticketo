@@ -8,7 +8,7 @@ type ticketType = {
 export const fetchTicketData = (query: string, disableLoader: Function): Function => {
     return (dispatch: Function) => {
         Api.get(`/tickets?${query}`).then((response) => {
-            var eventTypesMap = response.data.reduce((acc: Object, curr: ticketType) => {
+            var eventTypesMap = response?.data?.reduce((acc: Object, curr: ticketType) => {
                 if (acc[curr.eventType]) acc[curr.eventType] += 1
                 else acc[curr.eventType] = 1
 
