@@ -106,3 +106,27 @@
     margin: 10px auto;
     text-align: center;
 }
+
+
+@media screen and (max-width:768px) {
+    .tickets_box{
+        width: 100%;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: auto auto;
+    }
+    .ticket_body{
+        width: 100%;
+        margin:0px auto;
+        margin: unset 0px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+   .tickets_box{
+
+        grid-template-columns: auto;
+    } 
+}
