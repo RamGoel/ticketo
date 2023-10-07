@@ -69,3 +69,25 @@
     scale: 1.03;
     transition: .5s;
 }
+
+@media screen and (max-width:768px) {
+    .add_right{
+        display: none;
+    }
+    .add_left{
+        width: 100%;
+        height: auto;
+        background-color: black;
+    }
+    .input_box{
+        flex-direction: column;
+    }
+    .form_input{
+        width: 100% !important;
+        background-color: rgb(19, 19, 19);
+        display: block;
+    }
+    .form_btn{
+        width: 90vw;
+    }
+}
