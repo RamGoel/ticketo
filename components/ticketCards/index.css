@@ -5,7 +5,7 @@
     border-radius: 20px;
     align-self: flex-start;
     position: relative;
-    height: 140px;
+    min-height: 150px;
     transition: .5s ease-in-out;
 }
 
@@ -20,7 +20,8 @@
 .ticket_cover{
     position: absolute;
     width: 300px;
-    height: 140px;
+    min-height: 150px;
+    height: 100%;
     border-radius: 20px;
     display: flex;
     align-items: center;

@@ -14,12 +14,13 @@ import {
 import { appName } from '@utils/strings'
 
 export const TicketCard = ({ data }) => {
+    const eventWebsiteURL = data.url.includes('http') ? data.url : `https://${data.url}`;
     return <div className='ticket_body'>
         <div className='ticket_cover'>
             <div>
             <p className='ticket_reason'>{data.reason}</p> 
             <Link className='ticket_link' href={`mailto:${data.actor.email}?subject=Hello From ${appName}&body=Hi, ${data.actor.name} \n I need ticket for ${data.eventName}`}> Interested, Mail me! <Send2 size={14} /> </Link>
-            <Link className='ticket_link' href={data.url || ``}>Event Website <LinkSquare size={14} /></Link>
+            <Link className='ticket_link' href={eventWebsiteURL}>Event Website <LinkSquare size={14} /></Link>
             </div>
         </div>
         <div className='ticket_header'>
